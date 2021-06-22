@@ -1,0 +1,44 @@
+{
+	"info": {
+		"_postman_id": "3d8d665b-8945-4841-8b0f-a2f4328e1404",
+		"name": "FCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://fcm.googleapis.com/fcm/send",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAI8Of0I0:APA91bFbeUW_apNwxOE2LRLqK6RaEngmzxaZuUA6IJqT_OnkxgRdkykwlB0ugUiBHLm31y64s0U7pGfebhCIwo5iaYWeGYXxhRDVN0EXzBprDIR85cuV3kXUlXpkLYGxFKMpSShfRCI7"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"to\": \"eIEf7DNETm2fYpO9x7OoOo:APA91bHEdjoOSOeHeVCbBo_IVbrtSXsLNb2PShfJ2H797xbRXUJqc8wdxHNHM5VwSXBIp-t2Tn3c5daoZ0j4lh7yPhcZhcZ1zNg7aoWcKji9V7Y6EJ42SyKmbBjzRaVUYlM6-KuLuCMa\",\n    \"notification\": {\n        \"title\": \"Notification custom Title \",\n        \"body\": \"Notification custom content\"\n    },\n    \"data\": {\n        \"body\": \"Body of Your Notification in Data\",\n        \"title\": \"Title of Your Notification in Title\",\n        \"click_action\": \"FLUTTER_NOTIFICATION_CLICK\",\n        \"status\": \"done\",\n        \"id\": \"1\",\n        \"custom_data\": {\n        \t\"action\":\"NEW\",\n        \t\"module_id\":\"OPEN_APP_NEW\",\n        \t\"data\":{}\n        }\n    },\n    \"priority\": \"high\"\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				},
+				"description": "This is Test FCM"
+			},
+			"response": []
+		}
+	]
+}
